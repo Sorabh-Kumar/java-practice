@@ -1,5 +1,5 @@
 import java.util.*;
-public class Chewbacca_and_Number {
+public class chewbacca_and_number {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
 		long n = sc.nextLong();
