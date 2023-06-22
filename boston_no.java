@@ -1,19 +1,31 @@
 import java.util.*;
 public class boston_no {
-	public static int fac(int n ){
-		int a = n;
-		int t = 0;
-		for(int i =2; i < a; i++ ){
+	public static long primesum(long n){
+		long a = n;
+		long sum = 0;
+		for(long i = 2; i<=n; i++){
 			while(n%i ==0){
-				t = t+i;
-				n /= i;
+				if (i < 10){
+					sum = sum +i;
+					n = n/i;
+				}
+				else{
+					n = n/i;
+					long t = 0;
+					long j = i; 
+					while(j>0){
+						t = j%10;
+						j = j/10;
+						sum = sum + t;
+					}
+				}
 			}
 		}
-		return t;
+		return sum;
 	}
-	public static int dig(int n){
-		int t = 0;
-		int r = 0;
+	public static long dig(long n){
+		long t = 0;
+		long r = 0;
 		while(n>0){
 			t = n%10;
 			n /= 10;
@@ -23,8 +35,10 @@ public class boston_no {
 	}
     public static void main(String args[]) {
 		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		System.out.println(dig(n));
-		System.out.println(fac(n));
+		long n = sc.nextInt();
+		if(dig(n)== primesum(n))
+			System.out.println(1);
+		else
+			System.out.println(0);
     }
 }
