@@ -9,9 +9,18 @@ public class array_practice {
             n[i]= sc.nextInt();
         }
         for(int v: n){
-            System.out.println(v);
+            System.out.print(v+"    |");
         }
         System.out.println("enter value to search");
         int x = sc.nextInt();
+        for(int i = 0; i<a; i++){
+            if(n[i]==x){
+                System.out.println("Match found on array index"+ i);
+                break;
+            }
+            else if(i== (a-1)){
+                System.out.println("No match found");
+            }
+        }
     }
 }
