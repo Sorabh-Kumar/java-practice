@@ -5,7 +5,7 @@ public class array_practice {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int [] n = new int[a];
-        for(int i =0; i<n; i++){
+        for(int i =0; i<a; i++){
             n[i]= sc.nextInt();
         }
         for(int v: n){
