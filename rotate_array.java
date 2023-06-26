@@ -4,7 +4,7 @@ public class rotate_array {
 public static void rot(int[] arr, int r) {
     r = r % arr.length;
     for(int i = 0 ; i<r; i++){
-        int l = arr[-1];
+        int l = arr[arr.length-1];
         for(int j = arr.length; j>0; j--){
             arr[j]= arr[j-1];
         }
