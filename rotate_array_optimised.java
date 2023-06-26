@@ -11,7 +11,10 @@ public class rotate_array_optimised {
     }
     public static void rot(int[] arr, int r) {
         int s= arr.length;
-        r = r % arr.length;
+        r = r % s;
+        if(r<0){
+            r = 5+r;
+        }
         //whole rev
         rev(arr, 0 , (s-1) );
        //inverse rotated no.
