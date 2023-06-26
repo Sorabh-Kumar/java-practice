@@ -18,8 +18,16 @@ public static void rot(int[] arr, int r) {
         for(int i = 0; i<n;i++){
             a[0]= sc.nextInt();
         }
+        for(int v : a){
+            System.out.print(v+" ");
+            System.out.println();
+        }
         System.out.println("enter value for rotation"); 
         int r = sc.nextInt();
-        rot(a[], r); 
+        rot(a, r); 
+        for(int v : a){
+            System.out.print(v+" ");
+            System.out.println();
+        }
         }
 }
