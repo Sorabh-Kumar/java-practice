@@ -1,18 +1,18 @@
 import java.util.Scanner;
 
-public class array_product_optimised { {
+public class array_product_optimised {
     public static void so(int [] arr){
         int l = arr.length;
         int[] a = new int[l];
         int y = 1;
-        for(int k = l-1; k<=0 ; k-- ){
+        for(int k = l-1; k>=0 ; k-- ){
             a[k] = y;
             y = y * arr[k];
         }
 
         for(int i =0; i<l; i++){
         int x = 1; 
-        System.out.print(x*a[i] +" ");
+        System.out.print(x * a[i] +" ");
         x = x * arr[i];     
         }
     }
