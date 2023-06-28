@@ -11,7 +11,7 @@ public class rain_water {
             l = Math.max(l, arr[j]); 
         }
         for(int j=i;j<s; j++ ){
-            r = Math.max(l, arr[j]); 
+            r = Math.max(r, arr[j]); 
         }
      ans= ans+ Math.min(l, r) - arr[i];
      }
