@@ -9,7 +9,7 @@ public class swap_count {
             for(j = i-1; j>=0 && arr[j]> p; j--){
                 arr[j+1]= arr[j];   
             }
-            arr[j] = p;
+            arr[j+1] = p;
         }
     }
     public static void Swap(int[] a, int[] b){
