@@ -12,11 +12,26 @@ public class swap_count {
             arr[j+1] = p;
         }
     }
+    public static int search(int n, int[] a){
+        for(int i = 0; i<a.length; i++){
+            if(a[i]==n){
+                return i;
+            }
+        }
+        return 0;
+    }
     public static void Swap(int[] a, int[] b){
         int c = 0;
         for(int i =0; i<a.length; i++){
-            if(a[i]!= b[i])
+            if(a[i]!= b[i]){
+                int x = a[i];
+                int y =search(x, b);
+                int temp = b[i];
+                b[i] = b[y];
+                b[y] = temp;
                 c++;
+            }
+                
         }
         System.out.println(c/2);
     }
