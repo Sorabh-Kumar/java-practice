@@ -14,6 +14,15 @@ public class rotate_anti_2d_array {
                 e--;
             }
         }
+        for(int i=0; i<m; i++){
+            for(int j =0; j<m; j++){
+                if(i<j){
+                    int temp = a[i][j];
+                    a[i][j] = a[j][i];
+                    a[j][i] = temp;
+                }
+            }
+        }
     }
     public static void main(String[] args) {
          Scanner sc = new Scanner(System.in);
