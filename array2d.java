@@ -8,12 +8,12 @@ public class array2d {
         int[][] a = new int[m][n];
         for(int i = 0; i<m; i++){
             for(int j =0 ; j<n; j++){
-                a[j][i] = sc.nextInt();
+                a[i][j] = sc.nextInt();
             }
         }
         for(int i = 0; i<m; i++){
             for(int j =0 ; j<n; j++){
-                System.out.print(a[j][i]);
+                System.out.print(a[i][j]);
             }
             System.out.println();
         }
