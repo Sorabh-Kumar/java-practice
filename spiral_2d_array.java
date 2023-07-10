@@ -18,13 +18,13 @@ public class spiral_2d_array {
             //right row
         }
         ec--;
-        if(sr<er){
+        if(sr<=er){
         for(int i =ec; i>=sc; i--){
             System.out.print(a[er][i]+" ");
             //bottem row
         }
         er--;
-        if(sc<ec){
+        if(sc<=ec){
         for(int i =er; i>=sr; i--){
             System.out.print(a[i][sc]+" ");
             //left row
