@@ -1,5 +1,5 @@
 import java.util.*;
-public class Main {
+public class diagonal_transvers {
     public static void diagonal(int[][] a) {
         int m = a.length;
         int n = a[0].length;
