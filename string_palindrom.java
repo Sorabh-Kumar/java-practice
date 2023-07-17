@@ -9,8 +9,6 @@ public class string_palindrom {
         int temp =0;
         for(int i= st.length()-1; i>=0; i--){
             rev = rev + st.charAt(i);
-            System.out.println(st);
-            System.out.println(rev);
         }
         if(st.equals(rev)){
             temp =1;
