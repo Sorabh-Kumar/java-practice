@@ -22,7 +22,6 @@ public class string_count_palindrom {
 			for(int j=i; j<st.length(); j++){
 				pal = pal + st.charAt(j);
 				if(st.charAt(i) == st.charAt(j)){
-					System.out.println(pal);
 					if(cp(pal)==1){
 						a++;
 					}
