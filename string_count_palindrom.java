@@ -24,6 +24,8 @@ public class string_count_palindrom {
 				if(st.charAt(i) == st.charAt(j)){
 					if(cp(pal)==1){
 						a++;
+
+						
 					}
 				}
 
